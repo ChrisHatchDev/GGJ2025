@@ -123,12 +123,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spear: {fileID: 0}
   _normalScale: {x: 1, y: 1, z: 1}
-  _minScale: {x: 0.1, y: 0.1, z: 0.1}
+  _minScale: {x: 0.25, y: 0.25, z: 0.25}
   _maxScale: {x: 1.25, y: 1.25, z: 1.25}
   _meshRenderer: {fileID: 4261950193267257215}
   _targetScale: {x: 0, y: 0, z: 0}
-  _blowUpSpeed: 0.2
-  _deflateSpeed: 2
+  _blowUpSpeed: 0.75
+  _deflateSpeed: 4
   _inflateCurve:
     serializedVersion: 2
     m_Curve:
