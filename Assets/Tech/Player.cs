@@ -4,6 +4,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private Spear _spear;
+    [SerializeField] private Vector3 _normalScale = Vector3.one;
     [SerializeField] private Vector3 _minScale = new Vector3(0.1f, 0.1f, 0.1f);
     [SerializeField] private Vector3 _maxScale = new Vector3(1.75f, 1.75f, 1.75f);
     [SerializeField] private MeshRenderer _meshRenderer;
@@ -52,19 +53,24 @@ public class Player : MonoBehaviour
             _spear.Throw();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
         {
-            BlowUpBubble();
+            // BlowUpBubble();
+            if (transform.localScale.magnitude < _minScale.magnitude)
+            {
+                transform.localScale = _minScale;
+                _targetScale = _minScale;
+                return;
+            }
+        
+            _targetScale -= Vector3.one * (Time.deltaTime * _deflateSpeed);
+        }
+        else
+        {
+            _targetScale = _normalScale;
         }
         
-        if (transform.localScale.magnitude < _minScale.magnitude)
-        {
-            transform.localScale = _minScale;
-            _targetScale = _minScale;
-            return;
-        }
-        
-        _targetScale -= Vector3.one * (Time.deltaTime * _deflateSpeed);
+
         transform.localScale = Vector3.Lerp(transform.localScale, _targetScale, _inflateCurve.Evaluate(Time.deltaTime * _blowUpSpeed));
     }
 
