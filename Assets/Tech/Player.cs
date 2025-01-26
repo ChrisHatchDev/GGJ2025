@@ -1,4 +1,4 @@
-using System;
+using NUnit.Framework.Constraints;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -13,12 +13,25 @@ public class Player : MonoBehaviour
     [SerializeField] private float _blowUpSpeed = 1;
     [SerializeField] private float _deflateSpeed = 1;
     [SerializeField] private AnimationCurve _inflateCurve;
+    // [SerializeField] private float StrafeSpeed = 5;
+    // [SerializeField] private float _verticalStrafeLimit = 0.5f;
+    // [SerializeField] private float _horizontalStrafeLimit = 0.5f;
+    // [SerializeField] private float _depthStrafeLimit = 0.5f;
+    
+    // private float _verticalStrafeLimitCompiled;
+    // private float _horizontalStrafeLimitCompiled;
+    // private float _depthStrafeLimitCompiled;
+    // public bool TwoDimensionalMode = false;
 
     public bool Popped = false;
 
     private void Start()
     {
         _targetScale = transform.localScale;
+        
+        // _verticalStrafeLimitCompiled = transform.position.y + _verticalStrafeLimit;
+        // _horizontalStrafeLimitCompiled = transform.position.x + _horizontalStrafeLimit;
+        // _depthStrafeLimitCompiled = transform.position.z + _depthStrafeLimit;
     }
 
     void Update()
@@ -47,8 +60,20 @@ public class Player : MonoBehaviour
         {
             Popped = true;
         }
+
+        // var horizontal = Input.GetAxis("Horizontal");
+        // transform.position += (TwoDimensionalMode ? Vector3.forward : Vector3.right) * (horizontal * Time.deltaTime * StrafeSpeed);
+        //
+        // var vertical = Input.GetAxis("Vertical");
+        // transform.position += (TwoDimensionalMode ? Vector3.forward : Vector3.up) * (vertical * Time.deltaTime * StrafeSpeed);
+        //
+        // transform.position = new Vector3(
+        //     Mathf.Clamp(transform.position.x, -_horizontalStrafeLimitCompiled, _horizontalStrafeLimitCompiled),
+        //     Mathf.Clamp(transform.position.y, -_verticalStrafeLimitCompiled, _verticalStrafeLimitCompiled),
+        //     Mathf.Clamp(transform.position.z, -_depthStrafeLimitCompiled, _depthStrafeLimitCompiled)
+        // );
         
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             _spear.Throw();
         }
@@ -69,7 +94,6 @@ public class Player : MonoBehaviour
         {
             _targetScale = _normalScale;
         }
-        
 
         transform.localScale = Vector3.Lerp(transform.localScale, _targetScale, _inflateCurve.Evaluate(Time.deltaTime * _blowUpSpeed));
     }
