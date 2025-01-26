@@ -21,7 +21,7 @@ MonoBehaviour:
     m_Value: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.46
   scatter:
     m_OverrideState: 1
     m_Value: 0.137
@@ -83,7 +83,7 @@ MonoBehaviour:
     m_Value: 5.6
   focalLength:
     m_OverrideState: 1
-    m_Value: 179
+    m_Value: 195.9
   bladeCount:
     m_OverrideState: 1
     m_Value: 6
