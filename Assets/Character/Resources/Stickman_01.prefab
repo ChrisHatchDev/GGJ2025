@@ -723,7 +723,9 @@ MonoBehaviour:
   _components:
   - componentID: 1
     component: {fileID: 4673364118723952499}
-  _childViews: []
+  _childViews:
+  - componentID: 1
+    component: {fileID: 0}
 --- !u!114 &4673364118723952499
 MonoBehaviour:
   m_ObjectHideFlags: 0
