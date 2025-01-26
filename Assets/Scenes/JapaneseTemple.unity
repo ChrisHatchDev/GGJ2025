@@ -1056,10 +1056,182 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stickman_01 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 1905172467014603154, guid: 10a695c53a384432994d739265f88876, type: 3}
-      propertyPath: m_IsActive
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.lookAt.target
+      value: 
+      objectReference: {fileID: 474633259}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.leftHand.target
+      value: 
+      objectReference: {fileID: 474633259}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.rightHand.target
+      value: 
+      objectReference: {fileID: 474633259}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.pelvis.position.z
+      value: 1.467
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.pelvis.rotation.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.pelvis.rotation.y
+      value: 180.00005
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.lookAt.IKPosition.x
+      value: 0.059997316
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.lookAt.IKPosition.z
+      value: -1.533
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.leftFoot.IKPosition.x
+      value: 0.22943068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.leftFoot.IKPosition.z
+      value: 1.4976221
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.leftFoot.IKRotation.w
+      value: -0.00000025405106
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.leftFoot.IKRotation.x
+      value: -0.0000003678287
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.leftFoot.IKRotation.y
+      value: 0.56830275
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.leftFoot.IKRotation.z
+      value: -0.82281935
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.leftFoot.bendNormal.x
+      value: -0.010871144
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.leftFoot.bendNormal.y
+      value: 3.5527137e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.leftFoot.bendNormal.z
+      value: 0.000000010580145
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.leftHand.IKPosition.x
+      value: 0.3733463
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.leftHand.IKPosition.z
+      value: 1.2994723
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.leftHand.IKRotation.w
+      value: -0.00000023780096
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.leftHand.IKRotation.x
+      value: -0.0000003785377
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.leftHand.IKRotation.y
+      value: 0.5319518
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.leftHand.IKRotation.z
+      value: -0.84677464
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.leftHand.bendNormal.x
+      value: 0.059474055
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.leftHand.bendNormal.y
+      value: -1.7763568e-14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.leftHand.bendNormal.z
+      value: -0.000000052900706
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.rightFoot.IKPosition.x
+      value: -0.10943061
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.rightFoot.IKPosition.z
+      value: 1.503859
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.rightFoot.IKRotation.w
+      value: -0.00000024971362
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.rightFoot.IKRotation.x
+      value: -0.00000037078715
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.rightFoot.IKRotation.y
+      value: 0.55859995
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.rightFoot.IKRotation.z
+      value: -0.82943714
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.rightFoot.bendNormal.x
+      value: -0.013085269
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.rightFoot.bendNormal.z
+      value: 0.000000010580145
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.rightHand.IKPosition.x
+      value: -0.25334662
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.rightHand.IKPosition.z
+      value: 1.2676337
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.rightHand.IKRotation.w
+      value: -0.0000002643321
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.rightHand.IKRotation.x
+      value: -0.0000003605116
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.rightHand.IKRotation.y
+      value: 0.59130096
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.rightHand.IKRotation.z
+      value: -0.8064511
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.rightHand.bendNormal.x
+      value: 0.07077728
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.rightHand.bendNormal.y
+      value: -2.1316282e-14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.rightHand.bendNormal.z
+      value: -0.00000006348085
+      objectReference: {fileID: 0}
+    - target: {fileID: 5318038201017358311, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: LookAtTarget
+      value: 
+      objectReference: {fileID: 474633259}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1208,8 +1380,8 @@ PrefabInstance:
       propertyPath: solvers.rightHand.target
       value: 
       objectReference: {fileID: 474633259}
-    - target: {fileID: 8613527466907174373, guid: 10a695c53a384432994d739265f88876, type: 3}
-      propertyPath: solver.target
+    - target: {fileID: 5318038201017358311, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: LookAtTarget
       value: 
       objectReference: {fileID: 474633259}
     m_RemovedComponents: []
@@ -1330,10 +1502,10 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 1540061914}
   - {fileID: 171431891}
+  - {fileID: 474633259}
   - {fileID: 1609021238078092946}
   - {fileID: 1975642078}
   - {fileID: 6983235042084150393}
   - {fileID: 2054444821}
   - {fileID: 1700273400}
   - {fileID: 1075635125}
-  - {fileID: 474633259}

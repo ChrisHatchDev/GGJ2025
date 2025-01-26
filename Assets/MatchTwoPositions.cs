@@ -1,20 +1,32 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class MatchTwoPositions : MonoBehaviour
 {
-    [SerializeField] private Transform target1;
-    [SerializeField] private Transform target2;
-    [SerializeField] private Vector3 upDirection = Vector3.up;
+    // The cube on the mouse or whatever else is the "aim target"
+    [SerializeField] private Transform LookAtTarget;
+    
+    // These two are the hands
+    [FormerlySerializedAs("target1")] [SerializeField] private Transform LeftHand;
+    [FormerlySerializedAs("target2")] [SerializeField] private Transform RightHand;
+    // [SerializeField] private Vector3 upDirection = Vector3.up;
 
     void Update()
     {
-        if (target1 != null && target2 != null)
+        if (LeftHand != null && RightHand != null)
         {
-            Vector3 averagePosition = (target1.position + target2.position) / 2;
+            Vector3 averagePosition = (LeftHand.position + RightHand.position) / 2;
             transform.position = averagePosition;
+            
+            // Make rotation look at LookAtTarget
+            if (LookAtTarget != null)
+            {
+                var direction = LookAtTarget.position - transform.position;
+                transform.rotation = Quaternion.LookRotation(direction, transform.up);
+            }
 
-            Vector3 averageForward = (target1.forward + target2.forward).normalized;
-            transform.rotation = Quaternion.LookRotation(averageForward, upDirection);
+            // Vector3 averageForward = (target1.forward + target2.forward).normalized;
+            // transform.rotation = Quaternion.LookRotation(averageForward, transform.forward);
         }
     }
 }
