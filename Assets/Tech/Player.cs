@@ -10,8 +10,8 @@ public class Player : MonoBehaviour
     [SerializeField] private MeshRenderer _meshRenderer;
 
     [SerializeField] private Vector3 _targetScale;
-    [SerializeField] private float _blowUpSpeed = 1;
-    [SerializeField] private float _deflateSpeed = 1;
+    [SerializeField] private float _blowUpSpeed = 5;
+    [SerializeField] private float _deflateSpeed = 10;
     [SerializeField] private AnimationCurve _inflateCurve;
     // [SerializeField] private float StrafeSpeed = 5;
     // [SerializeField] private float _verticalStrafeLimit = 0.5f;
@@ -46,20 +46,20 @@ public class Player : MonoBehaviour
         {
             _spear.Renderer.enabled = false;
             _spear.Renderer2.enabled = false;
-            _meshRenderer.enabled = false;
+            // _meshRenderer.enabled = false;
             return;
         }
         else
         {
             _spear.Renderer.enabled = true;
             _spear.Renderer2.enabled = true;
-            _meshRenderer.enabled = true;
+            // _meshRenderer.enabled = true;
         }
         
-        if (transform.localScale.x > _maxScale.x)
-        {
-            Popped = true;
-        }
+        // if (transform.localScale.x > _maxScale.x)
+        // {
+        //     Popped = true;
+        // }
 
         // var horizontal = Input.GetAxis("Horizontal");
         // transform.position += (TwoDimensionalMode ? Vector3.forward : Vector3.right) * (horizontal * Time.deltaTime * StrafeSpeed);
