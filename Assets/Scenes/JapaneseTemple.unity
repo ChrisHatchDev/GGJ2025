@@ -212,8 +212,8 @@ ReflectionProbe:
   m_TimeSlicingMode: 0
   m_Resolution: 256
   m_UpdateFrequency: 0
-  m_BoxSize: {x: 11.69044, y: 7.6619053, z: 21.972752}
-  m_BoxOffset: {x: 1.6042342, y: 2.6567125, z: 0.20165634}
+  m_BoxSize: {x: 12.502443, y: 14.888103, z: 21.972752}
+  m_BoxOffset: {x: -0.03395009, y: 6.269811, z: 0.20165634}
   m_NearClip: 0.3
   m_FarClip: 1000
   m_ShadowDistance: 100
@@ -239,7 +239,7 @@ Transform:
   m_GameObject: {fileID: 248633972}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.003001, y: -2.9610267, z: 3.3465586}
+  m_LocalPosition: {x: -6.37, y: -2.9610267, z: 3.3465586}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1022,7 +1022,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1241683907384101672, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.467
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 1241683907384101672, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1057,6 +1057,10 @@ PrefabInstance:
       value: Stickman_01 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.lookAt.target
       value: 
       objectReference: {fileID: 474633259}
@@ -1070,7 +1074,7 @@ PrefabInstance:
       objectReference: {fileID: 474633259}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.pelvis.position.z
-      value: 1.467
+      value: 0.74999994
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.pelvis.rotation.x
@@ -1086,7 +1090,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.lookAt.IKPosition.z
-      value: -1.533
+      value: -2.25
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftFoot.IKPosition.x
@@ -1094,7 +1098,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftFoot.IKPosition.z
-      value: 1.4976221
+      value: 0.78062207
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftFoot.IKRotation.w
@@ -1114,11 +1118,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftFoot.bendNormal.x
-      value: -0.010871144
+      value: -0.010871164
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftFoot.bendNormal.y
-      value: 3.5527137e-15
+      value: 1.7763568e-15
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftFoot.bendNormal.z
@@ -1130,7 +1134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftHand.IKPosition.z
-      value: 1.2994723
+      value: 0.5824724
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftHand.IKRotation.w
@@ -1150,7 +1154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftHand.bendNormal.x
-      value: 0.059474055
+      value: 0.059474014
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftHand.bendNormal.y
@@ -1166,7 +1170,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightFoot.IKPosition.z
-      value: 1.503859
+      value: 0.78685904
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightFoot.IKRotation.w
@@ -1186,7 +1190,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightFoot.bendNormal.x
-      value: -0.013085269
+      value: -0.013085228
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.rightFoot.bendNormal.y
+      value: 1.7763568e-15
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightFoot.bendNormal.z
@@ -1198,7 +1206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightHand.IKPosition.z
-      value: 1.2676337
+      value: 0.5506336
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightHand.IKRotation.w
@@ -1218,7 +1226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightHand.bendNormal.x
-      value: 0.07077728
+      value: 0.07077733
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightHand.bendNormal.y
@@ -1228,10 +1236,18 @@ PrefabInstance:
       propertyPath: solvers.rightHand.bendNormal.z
       value: -0.00000006348085
       objectReference: {fileID: 0}
+    - target: {fileID: 3329563489582234795, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: PlayerNumber
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5318038201017358311, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: LookAtTarget
       value: 
       objectReference: {fileID: 474633259}
+    - target: {fileID: 5801038718287867898, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: m_TagString
+      value: Spear2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1334,7 +1350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1241683907384101672, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.288
+      value: -0.75
       objectReference: {fileID: 0}
     - target: {fileID: 1241683907384101672, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1369,21 +1385,53 @@ PrefabInstance:
       value: Stickman_01
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.spine.target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.lookAt.target
       value: 
       objectReference: {fileID: 474633259}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.leftFoot.target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftHand.target
       value: 
       objectReference: {fileID: 474633259}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.rightFoot.target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightHand.target
       value: 
       objectReference: {fileID: 474633259}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.spine.IKPositionWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.leftFoot.IKRotationWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.rightFoot.IKPositionWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.rightFoot.IKRotationWeight
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5318038201017358311, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: LookAtTarget
       value: 
       objectReference: {fileID: 474633259}
+    - target: {fileID: 5801038718287867898, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: m_TagString
+      value: Spear1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

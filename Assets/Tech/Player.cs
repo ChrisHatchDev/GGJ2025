@@ -1,13 +1,22 @@
+using System;
 using NUnit.Framework.Constraints;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public enum Players
+    {
+        One,
+        Two
+    }
+
+    public Players PlayerNumber;
+    
     [SerializeField] private Spear _spear;
     [SerializeField] private Vector3 _normalScale = Vector3.one;
-    [SerializeField] private Vector3 _minScale = new Vector3(0.1f, 0.1f, 0.1f);
+    [SerializeField] private Vector3 _minScale = new Vector3(0.25f, 0.25f, 0.25f);
     [SerializeField] private Vector3 _maxScale = new Vector3(1.75f, 1.75f, 1.75f);
-    [SerializeField] private MeshRenderer _meshRenderer;
+    [SerializeField] private Renderer _meshRenderer;
 
     [SerializeField] private Vector3 _targetScale;
     [SerializeField] private float _blowUpSpeed = 5;
@@ -28,7 +37,6 @@ public class Player : MonoBehaviour
     private void Start()
     {
         _targetScale = transform.localScale;
-        
         // _verticalStrafeLimitCompiled = transform.position.y + _verticalStrafeLimit;
         // _horizontalStrafeLimitCompiled = transform.position.x + _horizontalStrafeLimit;
         // _depthStrafeLimitCompiled = transform.position.z + _depthStrafeLimit;
@@ -44,16 +52,16 @@ public class Player : MonoBehaviour
         // Written by Copilot, the AI that's going to take my job
         if (Popped)
         {
-            _spear.Renderer.enabled = false;
-            _spear.Renderer2.enabled = false;
-            // _meshRenderer.enabled = false;
+            // _spear.Renderer.enabled = false;
+            // _spear.Renderer2.enabled = false;
+            _meshRenderer.enabled = false;
             return;
         }
         else
         {
-            _spear.Renderer.enabled = true;
-            _spear.Renderer2.enabled = true;
-            // _meshRenderer.enabled = true;
+            // _spear.Renderer.enabled = true;
+            // _spear.Renderer2.enabled = true;
+            _meshRenderer.enabled = true;
         }
         
         // if (transform.localScale.x > _maxScale.x)
@@ -109,11 +117,32 @@ public class Player : MonoBehaviour
         _targetScale += Vector3.one * amount;
     }
 
+    public void HitBySpear()
+    {
+        Popped = true;
+        Debug.Log("Player hit spear");
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Spear"))
+        switch (PlayerNumber)
         {
-            Debug.Log("Player hit spear");
+            case Players.One:
+                if (other.CompareTag("Spear2"))
+                {
+                    HitBySpear();
+                }
+                break;
+            case Players.Two:
+                if (other.CompareTag("Spear1"))
+                {
+                    HitBySpear();
+                }
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
         }
+        
+
     }
 }
