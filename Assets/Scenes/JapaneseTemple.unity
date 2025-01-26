@@ -576,7 +576,7 @@ GameObject:
   - component: {fileID: 474633256}
   - component: {fileID: 474633260}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Mouse Aim Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1175,7 +1175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1241683907384101672, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.75
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 1241683907384101672, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1211,7 +1211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.lookAt.target
@@ -1238,6 +1238,10 @@ PrefabInstance:
       value: 180.00005
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.spine.IKPosition.z
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.lookAt.IKPosition.x
       value: 0.059997316
       objectReference: {fileID: 0}
@@ -1247,147 +1251,179 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftFoot.IKPosition.x
-      value: 0.22943068
+      value: 0.22943057
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftFoot.IKPosition.z
-      value: 0.78062207
+      value: 0.6741345
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftFoot.IKRotation.w
-      value: -0.00000025405106
+      value: -0.00000025420147
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftFoot.IKRotation.x
-      value: -0.0000003678287
+      value: -0.00000036772516
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftFoot.IKRotation.y
-      value: 0.56830275
+      value: 0.56863904
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftFoot.IKRotation.z
-      value: -0.82281935
+      value: -0.82258725
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftFoot.bendNormal.x
-      value: -0.010871164
+      value: -0.010871158
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftFoot.bendNormal.y
-      value: 1.7763568e-15
+      value: 7.0510264e-10
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftFoot.bendNormal.z
-      value: 0.000000010580145
+      value: 0.0000000043409822
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftHand.IKPosition.x
-      value: 0.3733463
+      value: 0.37334627
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftHand.IKPosition.z
-      value: 0.5824724
+      value: 0.5815683
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftHand.IKRotation.w
-      value: -0.00000023780096
+      value: -0.00000013085494
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftHand.IKRotation.x
-      value: -0.0000003785377
+      value: -0.00000042745424
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftHand.IKRotation.y
-      value: 0.5319518
+      value: 0.29271755
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftHand.IKRotation.z
-      value: -0.84677464
+      value: -0.95619893
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftHand.bendNormal.x
-      value: 0.059474014
+      value: 0.02381325
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftHand.bendNormal.y
-      value: -1.7763568e-14
+      value: -5.027445e-10
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.leftHand.bendNormal.z
-      value: -0.000000052900706
+      value: -0.000000023305354
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightFoot.IKPosition.x
-      value: -0.10943061
+      value: -0.1094307
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightFoot.IKPosition.z
-      value: 0.78685904
+      value: 0.680395
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightFoot.IKRotation.w
-      value: -0.00000024971362
+      value: -0.00000024870775
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightFoot.IKRotation.x
-      value: -0.00000037078715
+      value: -0.00000037146287
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightFoot.IKRotation.y
-      value: 0.55859995
+      value: 0.5563498
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightFoot.IKRotation.z
-      value: -0.82943714
+      value: -0.83094835
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightFoot.bendNormal.x
-      value: -0.013085228
+      value: -0.013085259
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightFoot.bendNormal.y
-      value: 1.7763568e-15
+      value: 1.6564705e-10
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightFoot.bendNormal.z
-      value: 0.000000010580145
+      value: 0.000000009582227
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightHand.IKPosition.x
-      value: -0.25334662
+      value: -0.25334656
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightHand.IKPosition.z
-      value: 0.5506336
+      value: 0.58156884
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightHand.IKRotation.w
-      value: -0.0000002643321
+      value: -0.00000013085494
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightHand.IKRotation.x
-      value: -0.0000003605116
+      value: -0.00000042745424
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightHand.IKRotation.y
-      value: 0.59130096
+      value: 0.29271755
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightHand.IKRotation.z
-      value: -0.8064511
+      value: -0.95619893
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightHand.bendNormal.x
-      value: 0.07077733
+      value: 0.02381327
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightHand.bendNormal.y
-      value: -2.1316282e-14
+      value: -0.0000000036815955
       objectReference: {fileID: 0}
     - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: solvers.rightHand.bendNormal.z
-      value: -0.00000006348085
+      value: -0.0000000023851996
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.spine.bones.Array.data[0].axis.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.spine.bones.Array.data[1].axis.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.spine.bones.Array.data[0].solverPosition.z
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.spine.bones.Array.data[0].solverRotation.w
+      value: -0.00000044703484
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.spine.bones.Array.data[0].solverRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.spine.bones.Array.data[1].solverPosition.z
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.spine.bones.Array.data[1].solverRotation.w
+      value: -0.00000044703484
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522333962072371918, guid: 10a695c53a384432994d739265f88876, type: 3}
+      propertyPath: solvers.spine.bones.Array.data[1].solverRotation.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3329563489582234795, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: PlayerNumber
@@ -1395,7 +1431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3524970809502376738, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3589223494273906598, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: PlayerNumber
@@ -1775,7 +1811,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1241683907384101672, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.75
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 1241683907384101672, guid: 10a695c53a384432994d739265f88876, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1929,6 +1965,18 @@ PrefabInstance:
     - target: {fileID: 8432129655000859515, guid: 1545e74d60b3b48cfb488a6eee7a95df, type: 3}
       propertyPath: m_Name
       value: Canvas (Main UI)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996226719409628462, guid: 1545e74d60b3b48cfb488a6eee7a95df, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -350
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996226719409628462, guid: 1545e74d60b3b48cfb488a6eee7a95df, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996226719409628462, guid: 1545e74d60b3b48cfb488a6eee7a95df, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -558
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
