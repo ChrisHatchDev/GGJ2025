@@ -41,6 +41,11 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
+        if (_realtimeView == null)
+        {
+            _realtimeView = GetComponentInParent<RealtimeView>();
+        }
+        
         _targetScale = transform.localScale;
         MouseAimTarget = GameObject.FindGameObjectWithTag("MouseAimTarget");
         // _verticalStrafeLimitCompiled = transform.position.y + _verticalStrafeLimit;

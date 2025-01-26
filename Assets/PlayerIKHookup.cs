@@ -11,12 +11,10 @@ public class PlayerIKHookup : MonoBehaviour
     
     private void Start()
     {
-        if (!_realtimeView.isOwnedLocallySelf)
+        if (_realtimeView == null)
         {
-            return;
+            _realtimeView = GetComponentInParent<RealtimeView>();
         }
-        
-        MouseAimTarget = GameObject.FindGameObjectWithTag("MouseAimTarget");
         
         // IKController.solver.aim.target = MouseAimTarget.transform;
         IKController.solvers.leftHand.target = MouseAimTarget.transform;

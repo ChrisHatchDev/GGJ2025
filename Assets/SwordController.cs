@@ -1,12 +1,18 @@
+using Normal.Realtime;
 using UnityEngine;
 
 public class SwordController : MonoBehaviour
 {
     public float ZOffset = 8;
     
+    public RealtimeView _realtimeView;
+    
     void Update()
     {
-        TrackMousePosition();
+        if (_realtimeView.isOwnedLocallyInHierarchy)
+        {
+            TrackMousePosition();
+        }
     }
 
     private void TrackMousePosition()

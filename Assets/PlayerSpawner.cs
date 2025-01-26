@@ -24,7 +24,8 @@ public class PlayerSpawner : MonoBehaviour
         var playerRotation = playerOne ? PlayerOneSpawn.rotation : PlayerTwoSpawn.rotation;
         
         // Instantiate the Player for this client once we've successfully connected to the room
-        GameObject playerGameObject = Realtime.Instantiate(prefabName: _playerPrefab.name,  // Prefab name
+        GameObject playerGameObject = Realtime.Instantiate(
+            prefabName: _playerPrefab.name,  // Prefab name
             ownedByClient: true,      // Make sure the RealtimeView on this prefab is owned by this client
             preventOwnershipTakeover: true,      // Prevent other clients from calling RequestOwnership() on the root RealtimeView.
             useInstance: realtime,
@@ -36,5 +37,24 @@ public class PlayerSpawner : MonoBehaviour
         // Get a reference to the player
         var player = playerGameObject.GetComponentInChildren<Player>();
         player.PlayerNumber = playerOne ? Player.Players.One : Player.Players.Two;
+
+        var childrenRealtimeViews = playerGameObject.GetComponentsInChildren<RealtimeTransform>();
+        foreach (var childRealtimeTransform in childrenRealtimeViews)
+        {
+            if (!childRealtimeTransform.isOwnedLocallyInHierarchy)
+            {
+                continue;
+            }
+            
+            childRealtimeTransform.RequestOwnership();
+            childRealtimeTransform.realtimeView.RequestOwnership();
+        }
+
+        // var playerTransform = playerGameObject.GetComponentInChildren<RealtimeTransform>();
+        // if (playerTransform.realtimeView.isOwnedLocallyInHierarchy)
+        // {
+        //     playerTransform.realtimeView.RequestOwnershipOfSelfAndChildren();
+        //     playerTransform.RequestOwnership();
+        // }
     }
 }
