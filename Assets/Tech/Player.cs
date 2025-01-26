@@ -1,4 +1,5 @@
 using System;
+using Normal.Realtime;
 using NUnit.Framework.Constraints;
 using UnityEngine;
 
@@ -22,6 +23,8 @@ public class Player : MonoBehaviour
     [SerializeField] private float _blowUpSpeed = 5;
     [SerializeField] private float _deflateSpeed = 10;
     [SerializeField] private AnimationCurve _inflateCurve;
+
+    [SerializeField] private GameObject MouseAimTarget;
     // [SerializeField] private float StrafeSpeed = 5;
     // [SerializeField] private float _verticalStrafeLimit = 0.5f;
     // [SerializeField] private float _horizontalStrafeLimit = 0.5f;
@@ -32,11 +35,14 @@ public class Player : MonoBehaviour
     // private float _depthStrafeLimitCompiled;
     // public bool TwoDimensionalMode = false;
 
+    public RealtimeView _realtimeView;
+    
     public bool Popped = false;
 
     private void Start()
     {
         _targetScale = transform.localScale;
+        MouseAimTarget = GameObject.FindGameObjectWithTag("MouseAimTarget");
         // _verticalStrafeLimitCompiled = transform.position.y + _verticalStrafeLimit;
         // _horizontalStrafeLimitCompiled = transform.position.x + _horizontalStrafeLimit;
         // _depthStrafeLimitCompiled = transform.position.z + _depthStrafeLimit;
@@ -44,6 +50,11 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if (!_realtimeView.isOwnedLocallySelf)
+        {
+            return;
+        }
+        
         // Close your eyes, this is going to be a bumpy ride :D
         // Jan 2022: I'm sorry, I can't do this anymore. I'm going to have to stop here.
         // Brought to you by the letter 'I' for 'I'm sorry'

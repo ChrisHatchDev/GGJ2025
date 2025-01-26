@@ -7,6 +7,7 @@ TagManager:
   - Spear
   - Spear1
   - Spear2
+  - MouseAimTarget
   layers:
   - Default
   - TransparentFX
