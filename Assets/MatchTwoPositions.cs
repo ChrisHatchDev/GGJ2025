@@ -17,8 +17,6 @@ public class MatchTwoPositions : MonoBehaviour
     
     private void Start()
     {
-        LookAtTarget = GameObject.FindGameObjectWithTag("MouseAimTarget").transform;
-        
         if (_realtimeView == null)
         {
             _realtimeView = GetComponentInParent<RealtimeView>();
@@ -41,7 +39,7 @@ public class MatchTwoPositions : MonoBehaviour
             if (LookAtTarget != null)
             {
                 var direction = LookAtTarget.position - transform.position;
-                if (direction.magnitude > 0.75f)
+                if (direction.magnitude > 0.2f)
                 {
                     transform.rotation = Quaternion.LookRotation(direction, transform.up);
                 }

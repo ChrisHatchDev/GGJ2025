@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85dde8909263b47d1818566b698185de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookAtTarget: {fileID: 0}
+  LookAtTarget: {fileID: 6691269334179621288}
   LeftHand: {fileID: 523364287701811553}
   RightHand: {fileID: 1415314325001067421}
   _realtimeView: {fileID: 0}
